@@ -1,5 +1,8 @@
 let { exec, spawn } = require('child_process');
 let dataSampler = require('./sample');
+
+const env = {process};
+
 /******* START DATA SAMPLEING ***********/
 const DATA_FOLDER = './samples/';
 const SAMPLED_DATA_FOLDER = './tmp/data/';
@@ -11,14 +14,13 @@ dataSampler(DATA_FOLDER, SAMPLED_DATA_FOLDER, SAMPLE_COUNT);
 const STD_BUFFER_SIZE = 1024 * 1024 * 1024; // 1gb
 
 const tarinConfig = {
-    'image_dir': SAMPLED_DATA_FOLDER,
-    'how_many_training_steps': 500,
-    'testing_percentage': 10,
-    'validation_percentage': 10,
-    'train_batch_size': 100,
-    'final_tensor_name': 'final_result',
-    //'rand_selection_percent': 5,
-    'trainer_file_path': 'train.py'
+    'image_dir': env.image_dir || SAMPLED_DATA_FOLDER,
+    'how_many_training_steps':env.how_many_training_steps || 500,
+    'testing_percentage': env.testing_percentage ||10,
+    'validation_percentage': env.validation_percentage ||10,
+    'train_batch_size': env.train_batch_size ||100,
+    'final_tensor_name': env.final_tensor_name ||'final_result',
+    'trainer_file_path':'train.py'
 };
 
 

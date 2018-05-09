@@ -23,7 +23,7 @@ function predictFromMultipeCNN(mainFolder, cnnName, cnnCount, callback) {
             '--labels': `./tmp/${mainFolder}/${cnnName}_${i}/output_labels.txt`,
             '--input_layer': 'Placeholder',
             '--output_layer': `final_result_${i}`,
-            '--image': './high-level-test/test2.jpeg'
+            '--image': process.env.IMAGE || './high-level-test/test2.jpeg'
         });
 
         execute(command, (error, stdout) => {
