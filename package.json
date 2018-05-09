@@ -1,0 +1,17 @@
+{
+  "name": "cnn-controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+	"predict": "node label.js",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp-sync": "0.0.3",
+    "shelljs": "^0.8.1"
+  }
+}

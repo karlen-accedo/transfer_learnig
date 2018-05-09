@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+node_modules/
+environment.txt
+build/
+samples/
+tmp/
+.env*
+high-level-test/
+references/
