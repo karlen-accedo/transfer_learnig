@@ -8,7 +8,7 @@ To train on your own data sent should be done the following.
 1. Create folder named **_samples_** in project directory, in must contain all training data in it.
 2. The training data must be classified by folders, i.e each folder represent exactly one class, the name of files are not restricted.
 3. To start training open any command line terminal and run `npm start`, it may take up to 1 hour depending on your system and configuration parameters that you provided(parameters will be provided below)
-4. After training is finished you can now use the model by calling `image=[image_filepath] node label.js` and the results will be printed in your console.
+4. After training is finished you can now use the model by calling `image=[image_file_path] node label.js` and the results will be printed in your console.
 5. You can also see the training process as well. Type ` tensorboard --logdir ./` in root directory of project, it will create a web server and provide link, where you can see reports of training process in your web browser.
 
 The initial configuration is as follows and it can be controlled by environment variables or by editing the **_server.js_** file.
