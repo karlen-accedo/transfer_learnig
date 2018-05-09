@@ -13,7 +13,6 @@ To train on your own data sent should be done the following.
 
 The initial configuration is as follows and it can be controlled by environment variables or by editing the **_server.js_** file.
 ```
-{
 	'image_dir': env.image_dir || './tmp/data/',
 	'how_many_training_steps':env.how_many_training_steps || 500,
 	'testing_percentage': env.testing_percentage ||10,
@@ -21,5 +20,4 @@ The initial configuration is as follows and it can be controlled by environment 
 	'train_batch_size': env.train_batch_size ||100,
 	'final_tensor_name': env.final_tensor_name ||'final_result',
 	'trainer_file_path':'train.py'
-	}
 ```
