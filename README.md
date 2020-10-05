@@ -1,5 +1,6 @@
 # transfer_learnig
 
+
 The project allows to build a image classifier in short time, by using transfer learning, from Googles Inception_v3 model.
 It uses **_tensorflow 1.7.0, pyhton 3.5.0, node JS 8.9_** and requires 64 bit architecture os.
 
