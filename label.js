@@ -8,6 +8,7 @@ predictFromMultipeCNN('24-3-2018', 'cnn', 5, (result) => {
 function predictFromMultipeCNN(mainFolder, cnnName, cnnCount, callback) {
     let generalSeparator = '\r\n';
     let classSeparator = '-';
+   
     /*
     python label_image.py \
     --graph=./tmp/output_graph.pb --labels=./tmp/output_labels.txt \
