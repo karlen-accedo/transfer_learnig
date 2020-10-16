@@ -5,6 +5,7 @@ predictFromMultipeCNN('24-3-2018', 'cnn', 5, (result) => {
     console.log(result)
 });
 
+
 function predictFromMultipeCNN(mainFolder, cnnName, cnnCount, callback) {
     let generalSeparator = '\r\n';
     let classSeparator = '-';
